@@ -1,0 +1,38 @@
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: @background;
+    .navContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1000px;
+        .menu {
+            display: flex;
+            width: 20%;
+            justify-content: flex-end;
+            a {
+                text-decoration: none;
+                font-family: 'Julius Sans One', sans-serif;
+                font-size: 1.8rem;
+                color: @background;
+                &:hover {
+                    color: darkgray;
+                    cursor: pointer;
+                }
+            }
+        }
+        @media @mobile {
+            flex-direction: column;
+            .menu {
+                width: 100%;
+            }
+        }
+        img {
+            height: 10rem;
+        }
+        
+    }
+}

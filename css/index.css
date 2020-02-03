@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #FBFBFB;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Julius Sans One', sans-serif;
+}
+h1 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+  margin-top: 2rem;
+}
+h2 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+  margin-top: 2rem;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: #FBFBFB;
+}
+nav .navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+}
+nav .navContainer .menu {
+  display: flex;
+  width: 20%;
+  justify-content: flex-end;
+}
+nav .navContainer .menu a {
+  text-decoration: none;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.8rem;
+  color: #FBFBFB;
+}
+nav .navContainer .menu a:hover {
+  color: darkgray;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  nav .navContainer {
+    flex-direction: column;
+  }
+  nav .navContainer .menu {
+    width: 100%;
+  }
+}
+nav .navContainer img {
+  height: 10rem;
+}
+.footer {
+  width: 100%;
+  background: black;
+}
+.footer p {
+  text-align: center;
+  color: #FBFBFB;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+header .head img {
+  animation-name: head;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-direction: alternate;
+}
+.home .content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home .content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+.home .content-section .text-content .btn {
+  text-decoration: none;
+  font-family: 'Julius Sans One', sans-serif;
+  display: block;
+  background-color: black;
+  cursor: pointer;
+  width: 85%;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 1.3rem;
+  color: white;
+}
+.home .content-section .text-content .btn:hover {
+  background-color: darkgray;
+}
+.home .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+.home .content-section .img-content img {
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
+@keyframes head {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
