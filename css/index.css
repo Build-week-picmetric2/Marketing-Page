@@ -338,3 +338,82 @@ header .head img {
     opacity: 1;
   }
 }
+.aboutTop {
+  display: flex;
+}
+.aboutTop .meet {
+  width: 65%;
+  padding: 30rem 30rem;
+}
+.aboutTop .teampic {
+  width: 33%;
+}
+.about-team-members {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
+.abouttop {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.abouttop .meet {
+  width: 50%;
+  padding: 10rem 0 0 7rem;
+}
+@media (max-width: 800px) {
+  .abouttop .meet {
+    padding: 1.5rem 0 0 1.5rem;
+  }
+}
+.abouttop .teampic {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+.abouttop .teampic img {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 500px) {
+  .abouttop {
+    flex-direction: column-reverse;
+  }
+  .abouttop .meet {
+    width: 100%;
+  }
+  .abouttop .teampic {
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .abouttop .teampic img {
+    width: 100%;
+  }
+}
+.aboutteam {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #FBFBFB;
+  background-color: black;
+}
+.aboutteam div {
+  margin: 2rem;
+  width: 30%;
+}
+@media (max-width: 800px) {
+  .aboutteam div {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .aboutteam div {
+    width: 80%;
+  }
+}
