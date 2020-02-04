@@ -234,12 +234,15 @@ nav .navContainer img {
 .footer {
   width: 100%;
   background: black;
+  margin: 0;
+  padding: 0;
 }
 .footer p {
   text-align: center;
   color: #FBFBFB;
   font-size: 1.6rem;
   padding: 20px;
+  margin: 0;
 }
 header {
   display: flex;
@@ -303,7 +306,7 @@ header .head img {
 }
 @media (max-width: 800px) {
   .home .content-section .img-content {
-    width: 35%;
+    width: 38%;
     margin-left: 0;
   }
 }
@@ -337,21 +340,6 @@ header .head img {
   100% {
     opacity: 1;
   }
-}
-.aboutTop {
-  display: flex;
-}
-.aboutTop .meet {
-  width: 65%;
-  padding: 30rem 30rem;
-}
-.aboutTop .teampic {
-  width: 33%;
-}
-.about-team-members {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: black;
 }
 .abouttop {
   display: flex;
