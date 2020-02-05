@@ -1,0 +1,55 @@
+nav {
+    display: flex;
+    justify-content: center;
+    background-color:@button-color;
+    color: @background;
+    position: sticky;
+  	top: 0;
+    .navContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1000px;
+        .menu {
+            display: flex;
+            width: 20%;
+            justify-content: space-between;
+            margin-right: 3rem;
+            a {
+                text-decoration: none;
+                font-family: 'Julius Sans One', sans-serif;
+                font-size: 1.8rem;
+                color: @background;
+                &:hover {
+                    color: @silver;
+                    cursor: pointer;
+                }
+            }
+        }
+        img {
+            height: 10rem;
+        }
+        @media @tablet {
+            margin-right: 3rem;
+            margin-left: 3rem;
+            .menu {
+                width: 30%;
+            }
+        }
+        @media @mobile {
+            flex-direction: column;
+            h1 {
+                display: none;
+            }
+            img {
+                height: 20rem;
+            }
+            .menu {
+                width: 100%;
+                justify-content: space-around;
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}

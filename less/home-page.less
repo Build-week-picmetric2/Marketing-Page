@@ -1,0 +1,92 @@
+
+header {
+  display: flex;
+  justify-content: center;
+  .head {
+    img {
+      .animation(head, 3s, 1); //using animation parametric mixin
+    }
+  } 
+}
+
+.home {
+  .content-section {
+    margin: 30px 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    .text-content {
+      width: 48%;
+      padding-right: 1%;
+      p {
+        width: 85%;
+      }
+      .btn {
+        text-decoration: none;
+        font-family: 'Julius Sans One', sans-serif;
+        .button(@button-color, 85%, @background);
+        &:hover {
+          background-color: @silver;
+        }
+      }
+      @media @tablet {
+        width: 60%;
+        p {
+          width: 95%;
+        }
+        .btn {
+          width: 95%;
+        }
+      }
+    }
+
+    .img-content {
+      width: 48%;
+      padding-left: 1%;
+      margin-right: 2rem;
+      img {
+        border-radius: 10px;
+      }
+      @media @tablet {
+        width: 38%;
+        margin-left: 0;
+      }
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      .text-content {
+        width: 100%;
+        margin: 1rem;
+        padding: 0 3rem 0 1rem;
+        p {
+          width: 100%;
+        }
+        .btn {
+          width: 100%;
+        }
+      }
+      .img-content {
+        margin: 1rem;
+        width: 100%;
+        padding: 0 3rem 0 1rem;
+      }
+    }
+  }
+}
+
+
+
+
+@keyframes head {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+

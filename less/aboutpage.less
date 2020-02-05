@@ -1,0 +1,69 @@
+
+.abouttop {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+        .meet {
+            width: 50%;
+            padding: 10rem 0 0 7rem;
+            @media @tablet{
+                padding: 1.5rem 0 0 1.5rem;
+            }
+        }
+        .teampic {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+            margin: 0;
+            padding: 0;
+            img {
+                display: flex;
+                justify-content: flex-end;
+                margin: 0;
+                padding: 0;
+                .animation(team, 3s, 1); //using animation parametric mixin
+            }
+        }
+        @media @mobile {
+            flex-direction: column-reverse;
+            .meet {
+                width: 100%;
+            }
+            .teampic {
+                justify-content: flex-end;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    
+}
+
+.aboutteam {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: @background;   
+    background-color: @button-color;
+    div {
+        margin: 2rem;
+        width: 30%;
+        @media @tablet {
+            width: 40%;
+        }
+        @media @mobile {
+            width: 80%;
+        }
+    }
+}
+
+@keyframes team {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
