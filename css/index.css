@@ -189,6 +189,16 @@ nav .navContainer {
   width: 100%;
   max-width: 1000px;
 }
+nav .navContainer .mainHeader {
+  text-decoration: none;
+  color: #FBFBFB;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 3rem;
+}
+nav .navContainer .mainHeader:hover {
+  color: #C0C0C0;
+  cursor: pointer;
+}
 nav .navContainer .menu {
   display: flex;
   width: 20%;
