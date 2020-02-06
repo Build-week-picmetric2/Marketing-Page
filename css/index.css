@@ -311,14 +311,14 @@ header .head img {
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
-  margin-right: 2rem;
+  margin-right: 0.5%;
 }
 .home .content-section .img-content img {
   border-radius: 10px;
 }
 @media (max-width: 800px) {
   .home .content-section .img-content {
-    width: 38%;
+    width: 37%;
     margin-left: 0;
   }
 }
