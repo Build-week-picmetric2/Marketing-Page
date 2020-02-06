@@ -1,6 +1,6 @@
 # Marketing-Page
 
-## This project build with Less preprocessor. :technologist:<br>
+## This project build with Less preprocessor. :computer:<br>
 
 Install Node, Yarn, LESS, and less-watch-compiler if needed.<br>
 For Mac:<br>
@@ -16,5 +16,5 @@ https://classic.yarnpkg.com/en/docs/install#windows-stable<br><br>
 You can find official LESS Documentation here:<br>
 http://lesscss.org<br><br>
 
-Once you are in the root of the project run 
-## less-watch-compiler less css index.less
+Once you are in the root of the project run:
+#### less-watch-compiler less css index.less
